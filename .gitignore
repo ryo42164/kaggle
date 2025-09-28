@@ -1,0 +1,36 @@
+# === Pythonキャッシュや中間ファイル ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === Jupyter Notebookのチェックポイント ===
+.ipynb_checkpoints/
+
+# === 仮想環境関連 ===
+.venv/
+env/
+venv/
+
+# === データ関連（大きなファイルやローカル専用データ） ===
+../ml_data/        # 1つ上のフォルダにある ml_data は管理しない
+*.csv              # CSVファイル（必要に応じて外す）
+*.tsv
+*.zip
+*.gz
+
+# === OSが自動生成する不要ファイル ===
+.DS_Store
+Thumbs.db
+
+# === ログ・結果ファイル ===
+*.log
+*.out
+*.err
+
+# === モデル保存ファイル ===
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
